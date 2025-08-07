@@ -1,0 +1,150 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px;
+  background: #f0f2f5;
+  color: #333;
+    display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+textarea, input, select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px; /* or 500px if you want it narrower */
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 12px 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.chat-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.bot-avatar {
+  font-size: 30px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.bot-bubble {
+  background-color: #e6f3ff;
+  color: #1a1a1a;
+  padding: 16px;
+  border-radius: 16px;
+  max-width: 90%;
+  font-size: 15px;
+  line-height: 1.6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 12px;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 14px;
+  font-family: Consolas, monospace;
+  color: #2c3e50;
+  margin: 0;
+}
+
+
+/* Center the main content and set a max width */
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+    width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Chat output section */
+#chat_output {
+  margin-top: 30px;
+}
+
+/* Bot message bubble - Telegram-style */
+.bot-response {
+  background-color: #e0f0ff;
+  color: #000;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin: 15px 0;
+  position: relative;
+  max-width: 85%;
+  word-wrap: break-word;
+  line-height: 1.6;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border: 1px solid #b3d9ff;
+}
+
+/* Add left arrow for bot message */
+.bot-response::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #e0f0ff;
+  border-bottom: 10px solid transparent;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

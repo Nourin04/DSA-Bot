@@ -158,4 +158,3 @@ deactivate
 
 
 
-If you’d like, I can also prepare a **Flask backend** for this HTML so that your Coding Tutor Bot works end-to-end with AI responses. That would make this README complete with full deployment instructions.

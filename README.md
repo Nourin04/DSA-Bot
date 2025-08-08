@@ -80,30 +80,68 @@ This project provides an engaging UI, smart input detection, responsive design, 
        
 ```
 
+
 ---
 
-## Setup Instructions
+##  Setup Instructions
 
-### 1. Prerequisites
+Follow these steps to set up and run the **DSA Bot** locally.
 
-* Web browser (Chrome, Firefox, Edge, etc.)
-* (Optional) A backend server if you want to process AI responses (Flask, Node.js, etc.)
+###  Clone the Repository
 
-### 2. Running the Project Locally
+```bash
+git clone https://github.com/Nourin04/DSA-Bot.git
+cd DSA-Bot
+```
 
-1. Save the `index.html` file in your project folder.
-2. Open the file in a browser:
+###  Create a Virtual Environment (Recommended)
 
-   * Right-click the file → **Open With** → **Browser**.
-3. Interact with the interface:
+It’s best to keep dependencies isolated.
 
-   * Select a feature.
-   * Enter your input.
-   * Submit to see results.
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
 
-> **Note:** This HTML file currently contains placeholders (`{% if response %}`) for dynamic content, which suggests integration with a backend (e.g., Flask with Jinja templates).
+# macOS / Linux
+python3 -m venv venv
+source venv/bin/activate
+```
 
+###  Install Dependencies
 
+```bash
+pip install -r requirements.txt
+```
+
+###  Set Environment Variables
+
+You’ll need your **OpenRouter API key**. Create a `.env` file in the project root and add:
+
+```env
+OPENROUTER_API_KEY=your_api_key_here
+```
+
+> Get your API key from [OpenRouter](https://openrouter.ai/).
+
+###  Run the Application
+
+```bash
+python app.py
+```
+
+The app will start on:
+
+```
+http://127.0.0.1:5000/
+```
+
+### Deactivate Environment (When Done)
+
+```bash
+deactivate
+```
+.
 
 
 

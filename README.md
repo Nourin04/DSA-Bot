@@ -10,6 +10,8 @@ The **Coding Tutor Bot** is a web-based interactive interface designed to help u
 
 This project provides an engaging UI, smart input detection, responsive design, and accessibility-friendly features to enhance the learning experience.
 
+Hosted link: https://dsa-bot-cjh5.onrender.com/
+
 ---
 
 ## Features

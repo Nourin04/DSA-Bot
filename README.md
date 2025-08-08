@@ -67,16 +67,17 @@ This project provides an engaging UI, smart input detection, responsive design, 
 ## Folder Structure
 
 ```
-project/
-│
-├── templates/
-│   └── index.html/
-├── app.py
-├── prompt.py
-├── requirements.txt
-├── openrouter_utils.py
-├── .gitignore
-└── README.md        
+├── __pycache__/              # Compiled Python files
+├── static/                   # Static assets (CSS, JS, images)
+├── templates/                # HTML templates
+│   └── index.html
+├── .gitignore                # Ignored files for Git
+├── README.md                 # Project documentation
+├── app.py                    # Main Flask app entry point
+├── openrouter_utils.py       # Helper functions for OpenRouter API
+├── prompts.py                # Predefined prompt templates
+├── requirements.txt          # Python dependencies
+       
 ```
 
 ---
